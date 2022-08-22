@@ -1,4 +1,4 @@
-# Minizero
+# Minizero Chess Engine
     A deep reinforcement learning based chess engine which follows the architecture of DeepMind's Alphazero
 
 # Todo
