@@ -10,7 +10,8 @@
     [x] Mask illegal moves child move counts
 
 # References/Inspiration
-    - Chess Game Dataset - https://www.pgnmentor.com/files.html
+    - Chess Game Dataset (PGN files Source) - https://www.pgnmentor.com/files.html
     - Board/Move encode/decode logic - https://github.com/ZiyuanMa/MuZero/blob/master/pseudocode.py
+    - Templates for Action, MCTS, Node, ReplayBuffer, config classes are from https://github.com/ZiyuanMa/MuZero/blob/master/pseudocode.py
     - Leela Zero - https://github.com/Zeta36/chess-alpha-zero
     - AlphaZero Implementation - https://github.com/geochri/AlphaZero_Chess
