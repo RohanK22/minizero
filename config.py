@@ -4,11 +4,11 @@ from typing import collections
 action_space_size=4672
 max_moves=512
 dirichlet_alpha=0.3
-lr_init=0.003#0.1
+lr_init=0.1#0.003#0.1
 lr_decay_rate = 0.1
 lr_decay_steps=400e3
-num_simulations=500 # 50% of Alphazero
-batch_size=64#256
+num_simulations=800 # 50% of Alphazero
+batch_size=256#64#256
 td_steps=max_moves # Always use Monte Carlo return.
 num_actors=3000
 momentum = 0.9

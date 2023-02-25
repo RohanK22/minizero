@@ -29,7 +29,7 @@ class OutBlock(nn.Module):
         super().__init__()
         # Value head
         self.valueHeadConv = nn.Conv2d(256, 1, 1, 1)
-        self.valueHeadConv
+#        self.valueHeadConv
         # .to(compute_device)
         
         # relu
@@ -167,7 +167,7 @@ def load_network():
   #       p = path
   # print(p)
   model = Network()
-  fp = config.model_save_path + 'mz-large'
+  fp = config.model_save_path + 'mz-largest'
   if os.path.isfile(fp):
       model.load_state_dict(torch.load(fp, map_location=torch.device('cpu')))
   else:
@@ -177,7 +177,7 @@ def load_network():
   return model.to(get_compute_device())
 
 def save_network(network: Network):
-    torch.save(network.state_dict(), config.model_save_path + 'mz-large')# + 'minizero_' + str(train_loops))
+    torch.save(network.state_dict(), config.model_save_path + 'mz-largest')# + 'minizero_' + str(train_loops))
 
 
 def train_network(network: Network, replay_buffer: ReplayBuffer, epoch_start = 0, n_epochs = 20):

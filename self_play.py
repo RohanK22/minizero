@@ -32,6 +32,7 @@ def play_game(network: Network) -> Game:
     (move, action_no) = select_action(root)
     game.make_move(move)
     show_svg(SVG(chess.svg.board(game.board)))
+    print(game.board)
     game.store_search_statistics(root)
     print(root.to_play, 'plays', move,' ---- v, p, count ', root.value(), root.children[action_no].prior, root.children[action_no].visit_count,'max_d', max_d, sep=' ', end='\n')
   return game

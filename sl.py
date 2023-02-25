@@ -36,4 +36,4 @@ if __name__ == "__main__":
         print(filename)
         relay_buffer_sl = get_games_from_file(("./games/" + filename))
         network = load_network()
-        train_network(network, relay_buffer_sl, n_epochs=5)
+        train_network(network, relay_buffer_sl, n_epochs=15)
